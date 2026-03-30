@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Resume Kit",
+    "description": "Perfect for beginners to create professional resumes quickly.",
+    "price": 9.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["10+ templates", "Basic customization", "Export to PDF"],
+    "icon": "file-text",
+    "img": "https://i.ibb.co.com/ccrBdM0W/portfolio.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced tools to craft ATS-friendly resumes with ease.",
+    "price": 19.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "ATS optimization", "Cover letter builder"],
+    "icon": "award",
+    "img": "https://i.ibb.co.com/ccrBdM0W/pro-resume-builder.png"
+  },
+  {
+    "id": 3,
+    "name": "Career Booster Pack",
+    "description": "All-in-one solution for job seekers aiming for top companies.",
+    "price": 49.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Unlimited resumes", "LinkedIn optimization", "Priority support"],
+    "icon": "rocket",
+    "img": "https://i.ibb.co.com/B2RyG1T9/operation.png"
+  },
+  {
+    "id": 4,
+    "name": "Portfolio Designer",
+    "description": "Create stunning online portfolios in minutes with an easy-to-use builder.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Custom domains", "Drag & drop builder", "Responsive design"],
+    "icon": "layout",
+    "img": "https://i.ibb.co.com/v43M9kc2/design-tool.png"
+  },
+  {
+    "id": 5,
+    "name": "Interview Prep Toolkit",
+    "description": "Get ready for interviews with expert-curated resources.",
+    "price": 24.99,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "features": ["Mock interviews", "Common Q&A", "Expert tips"],
+    "icon": "mic",
+    "img": "https://i.ibb.co.com/FbtpDgS0/writing-2327400-1.png"
+  },
+  {
+    "id": 6,
+    "name": "AI Resume Analyzer",
+    "description": "Analyze and improve your resume using AI insights.",
+    "price": 12.99,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "features": ["Instant feedback", "Keyword suggestions", "Score breakdown"],
+    "icon": "cpu",
+    "img": "https://i.ibb.co.com/B2RyG1T9/operation.png"
+  },
+  {
+    "id": 7,
+    "name": "Job Tracker Pro",
+    "description": "Track and manage all your job applications efficiently.",
+    "price": 7.99,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["Application tracking", "Status updates", "Reminders"],
+    "icon": "check-square",
+    "img": "https://i.ibb.co.com/B2RyG1T9/operation.png"
+  },
+  {
+    "id": 8,
+    "name": "Ultimate Career Suite",
+    "description": "Complete career toolkit with all premium features included.",
+    "price": 79.99,
+    "period": "yearly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "features": ["All features unlocked", "Dedicated support", "Regular updates"],
+    "icon": "star",
+    "img": "https://i.ibb.co.com/NgrwD6wG/social-media.png"
+  }
+]

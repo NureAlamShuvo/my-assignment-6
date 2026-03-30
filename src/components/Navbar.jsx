@@ -7,7 +7,7 @@ const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className='px-10 border-b border-b-gray-200'>
+        <div className='px-10 border-b border-b-gray-200 sticky top-0 z-50 bg-white'>
             <div className="navbar">
                 <div className="navbar-start">
                     <h2 className='text-2xl font-extrabold bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h2>
