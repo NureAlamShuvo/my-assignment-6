@@ -1,12 +1,18 @@
 
 import React, { use, useState } from 'react';
 import ToolsCard from './ToolsCard';
+import Cart from './Cart';
 
 const Tools = ({ toolsPromise }) => {
 
     const tools = use(toolsPromise);
 
     const [activeTap, setActiveTap] = useState("products");
+    const [cartItems, setCartItems] = useState([]);
+
+    const handleAddToCart = (tool) =>{
+        setCartItems([...cartItems, tool]);
+    }
 
     return (
         <div className='py-28'>
@@ -27,14 +33,14 @@ const Tools = ({ toolsPromise }) => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 container mx-auto mt-10'>
                         {
                             tools.map(tool =>
-                                <ToolsCard key={tool.id} tool={tool}></ToolsCard>)
+                                <ToolsCard key={tool.id} tool={tool} handleAddToCart={handleAddToCart}></ToolsCard>)
                         }
                     </div>
                 )
             }
 
-            {activeTap === "cart" && <cart></cart>}
-            
+            {activeTap === "cart" && <Cart cartItems={cartItems}></Cart>}
+
         </div>
     );
 };

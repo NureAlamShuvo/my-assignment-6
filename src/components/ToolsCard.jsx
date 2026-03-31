@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
 
-const ToolsCard = ({ tool }) => {
+const ToolsCard = ({ tool, handleAddToCart }) => {
 
     const [clickBtn, setClickBtn] = useState(false);
 
     const handleBuyBtn = () =>{
         setClickBtn(true);
+        handleAddToCart(tool);
     }
 
     return (
