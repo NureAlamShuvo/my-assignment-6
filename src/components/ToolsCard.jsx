@@ -1,15 +1,13 @@
-import React, { useState } from 'react';
+
 import { Check } from 'lucide-react';
 import { toast } from 'react-toastify';
 
 const ToolsCard = ({ tool, cartItems, handleAddToCart }) => {
 
-    const [clickBtn, setClickBtn] = useState(false);
-
+const isAdded = cartItems.find(item => item.id === tool.id);
     const handleBuyBtn = () =>{
-        setClickBtn(true);
-        const isFound = cartItems.find(item => item.id === tool.id);
-        if(isFound) {
+        
+        if(isAdded) {
             toast.error("Item already in cart")
             return;
         }
@@ -38,7 +36,7 @@ const ToolsCard = ({ tool, cartItems, handleAddToCart }) => {
                                     )
                                 }
                             </div>
-                            <button onClick={handleBuyBtn} className={`btn w-full ${clickBtn ? "btn-success" : "btn-primary"}`}>{clickBtn ? <span className='flex items-center gap-2'><Check size={16}/>Added To Card</span> : "Buy Now"}</button>
+                            <button onClick={handleBuyBtn} className={`btn w-full ${isAdded ? "btn-success" : "btn-primary"}`}>{isAdded ? <span className='flex items-center gap-2'><Check size={16}/>Added To Card</span> : "Buy Now"}</button>
                         </div>
     );
 };
