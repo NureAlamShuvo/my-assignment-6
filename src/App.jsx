@@ -3,6 +3,7 @@ import './App.css'
 import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import Stats from './components/Stats'
+import Steps from './components/Steps'
 import Tools from './components/Tools'
 
 
@@ -21,6 +22,7 @@ function App() {
       <Banner></Banner>
       <Stats></Stats>
       <Tools toolsPromise={toolsPromise}></Tools>
+      <Steps></Steps>
     </>
   )
 }
