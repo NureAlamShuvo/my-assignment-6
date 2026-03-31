@@ -23,7 +23,7 @@ const Tools = ({ toolsPromise }) => {
                 <div className='flex gap-4 justify-center'>
                     <button onClick={() => setActiveTap("products")} className={`btn ${activeTap === "products" ? "btn-primary" : "btn-outline"}`}>Products</button>
 
-                    <button onClick={() => setActiveTap("cart")} className={`btn ${activeTap === "cart" ? "btn-primary" : "btn-outline"}`}>Cart</button>
+                    <button onClick={() => setActiveTap("cart")} className={`btn ${activeTap === "cart" ? "btn-primary" : "btn-outline"}`}>Cart ({cartItems.length})</button>
 
                 </div>
             </div>
@@ -33,13 +33,13 @@ const Tools = ({ toolsPromise }) => {
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 container mx-auto mt-10'>
                         {
                             tools.map(tool =>
-                                <ToolsCard key={tool.id} tool={tool} handleAddToCart={handleAddToCart}></ToolsCard>)
+                                <ToolsCard key={tool.id} tool={tool} handleAddToCart={handleAddToCart} cartItems={cartItems}></ToolsCard>)
                         }
                     </div>
                 )
             }
 
-            {activeTap === "cart" && <Cart cartItems={cartItems}></Cart>}
+            {activeTap === "cart" && <Cart cartItems={cartItems} setCartItems={setCartItems}></Cart>}
 
         </div>
     );

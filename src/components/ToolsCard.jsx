@@ -1,13 +1,20 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
+import { toast } from 'react-toastify';
 
-const ToolsCard = ({ tool, handleAddToCart }) => {
+const ToolsCard = ({ tool, cartItems, handleAddToCart }) => {
 
     const [clickBtn, setClickBtn] = useState(false);
 
     const handleBuyBtn = () =>{
         setClickBtn(true);
+        const isFound = cartItems.find(item => item.id === tool.id);
+        if(isFound) {
+            toast.error("Item already in cart")
+            return;
+        }
         handleAddToCart(tool);
+        toast.success("Item Added To Cart");
     }
 
     return (
