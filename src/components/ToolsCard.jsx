@@ -15,8 +15,12 @@ const ToolsCard = ({ tool, cartItems, handleAddToCart }) => {
         toast.success("Item Added To Cart");
     }
 
+    const badgeClass = tool.tagType === "popular" ? "badge-primary" : tool.tagType === "best seller" ? "badge-warning" : "badge-success";
+
     return (
-        <div className='rounded-2xl bg-[#F2F2F2] p-10 space-y-4 transform transition-all duration-300 ease-in-out hover:-translate-y-3 hover:shadow-xl'>
+        <div className='rounded-2xl bg-[#F2F2F2] p-10 space-y-4 transform transition-all duration-300 ease-in-out hover:-translate-y-3 hover:shadow-xl relative'>
+
+            <span className={`badge ${badgeClass} absolute top-3 right-3`}>{tool.tag}</span>
 
             <img src={tool.img} alt="Image not found!" />
 

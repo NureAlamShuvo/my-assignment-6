@@ -22,7 +22,7 @@ const Banner = () => {
             {/* right area */}
 
             <div className='mt-5 lg:mt-0'>
-                 <img src={bannerImg} alt="" />
+                 <img src={bannerImg} alt="Banner Image" className='shadow-xl transform transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl hover:scale-[1.01]' />
             </div>
             </div>
         </div>

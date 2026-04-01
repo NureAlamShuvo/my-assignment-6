@@ -2,6 +2,7 @@
 import './App.css'
 import Banner from './components/Banner'
 import Navbar from './components/Navbar'
+import PricingCard from './components/PricingCard'
 import Stats from './components/Stats'
 import Steps from './components/Steps'
 import Tools from './components/Tools'
@@ -23,6 +24,7 @@ function App() {
       <Stats></Stats>
       <Tools toolsPromise={toolsPromise}></Tools>
       <Steps></Steps>
+      <PricingCard></PricingCard>
     </>
   )
 }
