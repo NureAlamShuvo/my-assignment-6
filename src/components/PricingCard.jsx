@@ -4,9 +4,9 @@ import React from 'react';
 const PricingCard = () => {
     return (
         <div>
-            <div className='container mx-auto p-28'>
+            <div className='container mx-auto px-6 py-10 md:p-28'>
                 <div className='text-center mb-10'>
-                    <h2 className='font-extrabold text-[#101727] text-5xl mb-4'>Simple, Transparent Pricing</h2>
+                    <h2 className='font-extrabold text-[#101727] text-2xl md:text-4xl lg:text-5xl mb-4'>Simple, Transparent Pricing</h2>
                     <p className='text-[#627382]'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
 
@@ -24,7 +24,7 @@ const PricingCard = () => {
                             <span className='flex items-center gap-2'><span className='text-green-400'><Check size={16} /></span><span className='text-[#627382]'>1 project per month</span></span>
                             <br />
                             <br />
-                            
+
                         </div>
 
                         <div className='mt-8'>
@@ -32,7 +32,13 @@ const PricingCard = () => {
                         </div>
                     </div>
 
-                    <div className='p-6 space-y-6 rounded-2xl shadow-sm bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02]'>
+                    <div className='p-6 space-y-6 rounded-2xl shadow-sm bg-gradient-to-r from-[#4F39F6] to-[#9514FA] text-white transform transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl hover:scale-[1.02] relative'>
+
+                        <div className='absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                            <span className='bg-orange-200 text-red-400 text-xs font-semibold px-4 py-1 rounded-full shadow-md border border-white/50'>
+                                Most Popular
+                            </span>
+                        </div>
 
                         <h3 className='font-bold text-2xl'>Pro</h3>
                         <p>Best for professionals</p>

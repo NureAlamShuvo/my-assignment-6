@@ -3,7 +3,7 @@ import React from 'react';
 
 const Steps = () => {
     return (
-        <div className='bg-[#F9FAFC] p-28'>
+        <div className='bg-[#F9FAFC] px-6 py-10 md:p-28'>
             <div className='container mx-auto'>
                 <div className='text-center'>
                     <h2 className='font-extrabold text-[#101727] text-[3rem]'>Get Started in 3 Steps</h2>
